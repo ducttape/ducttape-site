@@ -43,10 +43,9 @@ p {
 /* -------------------------------------------------- */
 
 #_HEADER {
-    width: 1300px;
-    height: 200px;
+    width: 900;
+    height: 100px;
     margin-top: 30px;
-    margin-bottom: -100px;
     margin-left: auto;
     margin-right: auto;
 }
