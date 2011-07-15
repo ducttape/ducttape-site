@@ -9,7 +9,6 @@ def error(error):
 
 @app.route("/")
 def index():
-    abort(404)
     return render_template("index.html")
 
 @app.route("/blog/")
