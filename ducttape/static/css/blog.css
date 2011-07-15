@@ -6,9 +6,13 @@
     margin-bottom: 30px;
 }
 
+.blog .post h2 {
+    font-size: 14pt;
+}
+
 .blog .post h2 .title {
     display: inline;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .blog .post h2 .meta {

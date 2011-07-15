@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+    <h1>Contact</h1>
+    <div style="float: right; margin-left: 20px">
+        <img src="{{ url_for('static', filename = 'gfx/contact.png') }}" />
+    </div>
+
+    <p>
+        If you have any questions, ideas, want to participate or just
+        want to say hello, you can drop us a quick mail to
+        <b><a href="mailto:info@ducttape-dev.org">info@ducttape-dev.org</a></b>
+        or meet us in IRC at <b>freenode.net#ducttape</b>
+        (<a href="http://webchat.freenode.net/?channels=ducttape" target="_blank">webchat</a>).
+    </p>
+{% endblock %}

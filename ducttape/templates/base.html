@@ -22,12 +22,8 @@
                     <li><a href="{{ url }}"{% if request.endpoint.startswith(endpoint) %} class="current"{% endif %}>{{ caption }}</a></li>
                     {% endmacro %}
 
-                    {% for e, c in [("index", "Home"),("blog", "Blog")] %}{{ nav(e,c) }}{% endfor %}
-                    <li><a href="#">Engine</a></li>
-                    <li><a href="#">Editor</a></li>
-                    <li><a href="#">Tutorials</a></li>
-                    <li><a href="#">Source</a></li>
-                    <li><a href="#">Download</a></li>
+                    {% for e, c in [("index", "About"),("blog", "Blog"),("engine", "Engine"),("editor", "Editor"),("tutorials", "Tutorials"),("download", "Download")] %}
+                    {{ nav(e,c) }}{% endfor %}
                 </ul>
             </div>
 
@@ -48,9 +44,9 @@
 
             <div id="_FOOTER">
                 <ul class="_MENU">
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
                     <li><a href="https://github.com/ducttape" target="_blank">Find us on github</a></li>
-                    <li><a href="#">Donate</a></li>
+                    <li><a href="{{ url_for('donate') }}">Donate</a></li>
                 </ul>
             </div>
         </div>

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1>Download</h1>
+    <h2>Source from github</h2>
+    <h3>Engine</h3>
+    <p>
+        <ul>
+            <li><a href="https://github.com/ducttape/ducttape-engine" target="_blank">The project on github</a></li>
+            <li><a href="https://github.com/ducttape/ducttape-engine/zipball/master">Github master as .zip</a></li>
+            <li><a href="https://github.com/ducttape/ducttape-engine/tarball/master">Github master as .tar.gz</a></li>
+        </ul>
+    </p>
+    <h3>Editor</h3>
+    <p>
+        Development of the editor has not yet been started, so it's basically
+        part of the engine project. In the future, you will be able to download
+        the editor separately here.
+    </p>
+
+    <h2>Binary packages</h2>
+    <p>
+        Sorry, there are no binary packages available yet. Please download
+        the source from above and compile as described
+        <a href="https://github.com/ducttape/ducttape-engine/wiki/Getting-started">
+        in the github wiki</a>.
+    </p>
+    <h2>Dependencies</h2>
+    <p>
+        If you want to compile the source yourself, you need all dependencies.
+        Linux users should consult their package managers. For Windows
+        users we prepared this
+        <a href="https://github.com/downloads/ducttape/ducttape-engine/ducttape-win32-dependencies.7z">dependency package.</a>
+    </p>
+    <p>
+        For further instructions, visit the <a href="https://github.com/ducttape/ducttape-engine/wiki/Getting-started">Getting Started</a>
+        wiki page on github.
+    </p>
+    <h2>OS-Independent Development Environment</h2>
+    <p>
+        If you just want to get a look at Ducttape without having to set
+        up anything, you can use the <a href="http://178.63.102.135/svens_stuff/Ducttape%20Development%20Environment.ova">
+        Ducttape Development Environment.</a>
+        It is a virtual machine with everything set up already for you.
+        The only requirement is that you have a processor with
+        virtualisation hardware extensions or you will get an error
+        on start-up.
+    </p>
+    <p>
+        If you have no idea how to use a virtual machine, just download
+        <a href="http://www.virtualbox.org/" target="_blank">VirtualBox</a>,
+        choose File -> Import and then select this OVA.
+    </p>
+
+{% endblock %}
