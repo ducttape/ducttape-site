@@ -8,6 +8,7 @@
 
 .blog .post h2 {
     font-size: 14pt;
+    text-decoration: none;
 }
 
 .blog .post h2 .title {
