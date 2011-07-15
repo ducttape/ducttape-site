@@ -54,6 +54,7 @@ p {
     color: #FFF;
     line-height: 120px;
     font-size: 40pt;
+    text-shadow: #F00 0 0 50px;
 }
 
 /* --------------------------------------------------- */
@@ -77,6 +78,7 @@ ul._MENU li {
 ul._MENU li a {
     display: block;
     padding: 6px 10px;
+    text-shadow: 0 0 10px #333;
     -webkit-transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
     -moz-transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
     transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
@@ -84,7 +86,7 @@ ul._MENU li a {
 
 ul._MENU li a.current {
     color: #CCC;
-    text-shadow: 0 0 5px #AAA;
+    text-shadow: 0 0 5px #333;
 }
 
 ul._MENU li a:hover {
