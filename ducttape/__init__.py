@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import *
 from datetime import *
 from flaskext.sqlalchemy import SQLAlchemy
 from flaskext.markdown import Markdown

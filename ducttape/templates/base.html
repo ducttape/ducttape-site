@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <title>ducttape &raquo; {% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/style.css') }}" />
+    </head>
+    <body>
+
+        <div id="_WRAPPER">
+            <div id="_WRAPPER_PADDING">
+                <div id="_HEADER">
+                    <div class="_CORNER" id="_CORNER_TL"></div>
+                    <div class="_CORNER" id="_CORNER_TR"></div>
+                    <div class="_CORNER" id="_CORNER_BL"></div>
+                    <div class="_CORNER" id="_CORNER_BR"></div>
+
+                    <div id="_HEADERTEXT">
+                        Ducttape
+                    </div>
+                </div>
+
+                <div id="_NAV">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Engine</a></li>
+                        <li><a href="#">Editor</a></li>
+                        <li><a href="#">Editor</a></li>
+                    </ul>
+                </div>
+
+                <div id="_CONTENT">
+                    <div id="_PAGE">
+<!-- CONTENT BEGIN -->
+{% block content %}{% endblock %}
+<!-- CONTENT END -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

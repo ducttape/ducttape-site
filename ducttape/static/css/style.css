@@ -1,0 +1,82 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 10pt;
+    background: #F6F6F6;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+a {
+
+}
+
+p {
+
+}
+
+/* -------------------------------------------------- */
+
+#_WRAPPER {
+    width: 900px;
+    margin: 40px auto;
+    background: #FFF;
+    position: relative;
+    border: 1px solid #E5E5E5;
+}
+
+._CORNER {
+    position: absolute;
+    background: url("../gfx/strips.png") left top no-repeat;
+    width: 90px;
+    height: 90px;
+    margin: -30px;
+}
+
+#_CORNER_TL {
+    left: 0;
+    top: 0;
+    background-position: left top;
+}
+
+#_CORNER_TR {
+    right: 0;
+    top: 0;
+    background-position: right top;
+}
+
+#_CORNER_BL {
+    left: 0;
+    bottom: 0;
+    background-position: left bottom;
+}
+
+#_CORNER_BR {
+    right: 0;
+    bottom: 0;
+    background-position: right bottom;
+}
+
+#_WRAPPER_PADDING {
+    padding: 40px;
+}
+
+#_HEADER {
+
+}

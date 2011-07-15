@@ -1,5 +1,5 @@
-from ducttape import app
+from ducttape import *
 
 @app.route("/")
 def index():
-    return "Oh hi there!"
+    return render_template("index.html")
