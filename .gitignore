@@ -1,0 +1,4 @@
+*.psd
+env/
+*.pyc
+*.db
