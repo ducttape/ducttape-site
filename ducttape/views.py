@@ -1,10 +1,16 @@
 from ducttape import *
 from ducttape.models import *
 
+@app.errorhandler(500)
+@app.errorhandler(404)
+@app.errorhandler(403)
+def error(error):
+    return render_template("error.html", error = error)
+
 @app.route("/")
 def index():
+    abort(404)
     return render_template("index.html")
-
 
 @app.route("/blog/")
 def blog():
