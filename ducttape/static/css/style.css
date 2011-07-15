@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-
+    font-size: 12pt;
 }
 
 h3 {
@@ -59,25 +59,38 @@ p {
 /* --------------------------------------------------- */
 
 #_NAV {
-    background: #111;
     margin: 0 auto;
     width: 800px;
     text-align: center;
 }
 
-#_NAV ul {
+ul._MENU {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#_NAV ul li {
+ul._MENU li {
     display: inline-block;
 }
 
-#_NAV ul li a {
+ul._MENU li a {
     display: block;
     padding: 6px 10px;
+    -webkit-transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+ul._MENU li a.current {
+    color: #CCC;
+    text-shadow: 0 0 5px #AAA;
+}
+
+ul._MENU li a:hover {
+    text-shadow: 0 0 5px #F00;
+    color: #C00;
+    text-decoration: none;
 }
 
 #_CONTENT {
@@ -124,6 +137,22 @@ p {
     padding: 40px;
 }
 
-#_HEADER {
+#_FOOTER {
+    text-align: center;
+}
 
+
+/* --------------------------------------------- */
+
+.index-logo {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    float: right;
+    background: #EEE;
+    border: 1px solid #DDD;
+}
+
+.index-logo img {
+    margin: 10px;
 }

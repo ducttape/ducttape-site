@@ -1,0 +1,27 @@
+.blog {
+
+}
+
+.blog .post {
+    margin-bottom: 30px;
+}
+
+.blog .post h2 .title {
+    display: inline;
+    font-weight: bold;
+}
+
+.blog .post h2 .meta {
+    display: inline;
+    color: #666;
+    font-size: 9pt;
+}
+
+.blog .post .text {
+    padding: 0 20px;
+}
+
+.blog .post .text p {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block head %}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/blog.css') }}" />
+{% endblock %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ post.title }}</h1>
+
+    <div class="blog-post">
+        <div class="meta">
+            {{ post.posted | time }}
+        </div>
+        <div class="text">
+            {{ post.text | markdown }}
+        </div>
+    </div>
+{% endblock %}

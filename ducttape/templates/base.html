@@ -3,6 +3,8 @@
     <head>
         <title>ducttape &raquo; {% block title %}{% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/style.css') }}" />
+        <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon" />
+        {% block head %}{% endblock %}
     </head>
     <body>
 
@@ -14,9 +16,13 @@
             </div>
 
             <div id="_NAV">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
+                <ul class="_MENU">
+                    {% macro nav(endpoint, caption) %}
+                    {% set url = url_for(endpoint) %}
+                    <li><a href="{{ url }}"{% if request.endpoint.startswith(endpoint) %} class="current"{% endif %}>{{ caption }}</a></li>
+                    {% endmacro %}
+
+                    {% for e, c in [("index", "Home"),("blog", "Blog")] %}{{ nav(e,c) }}{% endfor %}
                     <li><a href="#">Engine</a></li>
                     <li><a href="#">Editor</a></li>
                     <li><a href="#">Tutorials</a></li>
@@ -36,7 +42,16 @@
 <!-- CONTENT BEGIN -->
 {% block content %}{% endblock %}
 <!-- CONTENT END -->
+                    <div style="clear: both;"></div>
                 </div>
+            </div>
+
+            <div id="_FOOTER">
+                <ul class="_MENU">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="https://github.com/ducttape" target="_blank">Find us on github</a></li>
+                    <li><a href="#">Donate</a></li>
+                </ul>
             </div>
         </div>
     </body>
