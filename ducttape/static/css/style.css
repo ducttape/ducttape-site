@@ -1,10 +1,11 @@
 body {
     font-family: "DejaVu Serif";
     font-size: 10pt;
-    background: #111;
     line-height: 1.4em;
     margin: 0;
     padding: 0;
+
+    background: url("../gfx/header.png") center 30px no-repeat #111;
 }
 
 h1 {
@@ -40,7 +41,6 @@ p {
 /* -------------------------------------------------- */
 
 #_HEADER {
-    background: #222;
     width: 1300px;
     height: 200px;
     margin-top: 30px;
