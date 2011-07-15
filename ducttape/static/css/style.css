@@ -1,14 +1,15 @@
 body {
-    font-family: Verdana, Arial, sans-serif;
+    font-family: "DejaVu Serif";
     font-size: 10pt;
-    background: #F6F6F6;
+    background: #111;
     line-height: 1.4em;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-
+    font-weight: normal;
+    color: #333;
 }
 
 h2 {
@@ -24,7 +25,12 @@ h4 {
 }
 
 a {
+    color: #A11;
+    text-decoration: none;
+}
 
+a:hover {
+    text-decoration: underline;
 }
 
 p {
@@ -33,9 +39,50 @@ p {
 
 /* -------------------------------------------------- */
 
-#_WRAPPER {
+#_HEADER {
+    background: #222;
+    width: 1300px;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: -100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#_HEADER_TEXT {
+    text-align: center;
+    color: #FFF;
+    line-height: 120px;
+    font-size: 40pt;
+}
+
+/* --------------------------------------------------- */
+
+#_NAV {
+    background: #111;
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+}
+
+#_NAV ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#_NAV ul li {
+    display: inline-block;
+}
+
+#_NAV ul li a {
+    display: block;
+    padding: 6px 10px;
+}
+
+#_CONTENT {
     width: 900px;
-    margin: 40px auto;
+    margin: 0 auto;
     background: #FFF;
     position: relative;
     border: 1px solid #E5E5E5;
@@ -73,7 +120,7 @@ p {
     background-position: right bottom;
 }
 
-#_WRAPPER_PADDING {
+#_PAGE {
     padding: 40px;
 }
 
