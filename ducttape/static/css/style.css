@@ -156,6 +156,7 @@ ul._MENU li a:hover {
     float: right;
     background: #EEE;
     border: 1px solid #DDD;
+    margin: 10px;
 }
 
 .index-logo img {
