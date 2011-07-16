@@ -29,9 +29,9 @@ def engine():
 def editor():
     return render_template("editor.html")
 
-@app.route("/tutorials/")
-def tutorials():
-    return render_template("tutorials.html")
+@app.route("/contribute/")
+def contribute():
+    return render_template("contribute.html")
 
 @app.route("/download/")
 def download():

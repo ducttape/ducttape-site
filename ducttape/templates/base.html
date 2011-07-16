@@ -19,7 +19,7 @@
                 <ul class="_MENU">
                     {% macro nav(endpoint, caption) %}{% set url = url_for(endpoint) %}
                     <li><a href="{{ url }}"{% if request.endpoint != None and request.endpoint.startswith(endpoint) %} class="current"{% endif %}>{{ caption }}</a></li>{% endmacro %}
-                    {% for e, c in [("index", "About"),("blog", "Blog"),("engine", "Engine"),("editor", "Editor"),("tutorials", "Tutorials"),("download", "Download")] %}{{ nav(e,c) }}{% endfor %}
+                    {% for e, c in [("index", "About"),("blog", "Blog"),("engine", "Engine"),("editor", "Editor"),("contribute", "Contribute"),("download", "Download")] %}{{ nav(e,c) }}{% endfor %}
                 </ul>
             </div>
 
