@@ -6,12 +6,16 @@
     <div class="index-logo">
         <img src="{{ url_for('static', filename = 'gfx/logo.svg') }}" width="180" height="180">
     </div>
-    <h1>About the ducttape project</h1>
+    <h1>About the Ducttape Project</h1>
     <p>
-        Here are a few links for you to get started.
-
-        <ul>
-            <li><a href="#">Fork the engine on github</a></li>
-        </ul>
+        The Ducttape Project is an open source game development environment
+        consisting of an <a href="{{ url_for('engine') }}">engine</a> and an
+        <a href="{{ url_for('editor') }}">editor</a>. The main goal of the project
+        is to greatly ease the creation of modern games by doing most of the heavy-lifting and architecture design upfront.
+    </p>
+    <p>
+        The name "Ducttape" was chosen because we build on the shoulders of giants
+        (see <a href="{{ url_for('engine') }}">engine</a>) and provide the "duct tape"
+        to transparently use them.
     </p>
 {% endblock %}
