@@ -48,14 +48,26 @@ p {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
-#_HEADER_TEXT {
-    text-align: center;
+#_HEADER_TEXT a {
     color: #FFF;
     line-height: 120px;
     font-size: 40pt;
     text-shadow: #F00 0 0 50px;
+    font-weight: normal;
+    -webkit-transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+#_HEADER_TEXT a:hover {
+    text-decoration: none;
+    text-shadow: #FFF 0 0 50px;
+    -webkit-transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
 /* --------------------------------------------------- */
