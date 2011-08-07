@@ -45,3 +45,6 @@ def contact():
 def donate():
     return render_template("donate.html")
 
+@app.route("/thanks/", methods=["GET", "POST"])
+def thanks():
+    return render_template("thanks.html")
