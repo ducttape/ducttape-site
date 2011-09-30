@@ -26,5 +26,8 @@
             </div>
         </div>
         {% endfor %}
+        {% if not posts %}
+        <p>Nothing has been posted yet.</p>
+        {% endif %}
     </div>
 {% endblock %}

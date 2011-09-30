@@ -7,6 +7,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///ducttape-site.db'
 app.config['SQLALCHEMY_ECHO'] = False
 app.config['SECRET_KEY'] = 'lolverysecret'
+app.config.from_pyfile('../ducttape-site.cfg', silent=True)
 db = SQLAlchemy(app)
 Markdown(app, safe_mode="escape")
 

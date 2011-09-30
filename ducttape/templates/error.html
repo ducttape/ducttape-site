@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Error {{ error.code }} - {{ error.name }}{% endblock %}
+
+{% block content %}
+{% if error.code == 500 %}
+    <h1>This is an Idiosyncrasy</h1>
+
+    <div style="background: #EEE; border: 1px solid #DDD; padding: 10px 20px;">
+        <blockquote>
+            A crash is when your competitor's program dies. When your program dies, it is an 'idiosyncrasy'.
+        </blockquote>
+        <p>
+            <i>Guy Kawasaki</i>
+        </p>
+    </div>
+
+    <p>
+        Actually... this is a crash. More precisely: <b>Error {{ error.code }} - {{ error.name }}</b>.
+    </p>
+
+    <p>
+        For those of you not grown up with HTML status codes and too lazy
+        too look them up, here is a description:
+    </p>
+    {{ error.description | safe }}
+{% elif error.code == 404 %}
+    <h1>It's just not here</h1>
+    <p>
+        You were looking for it. I know. Now I have to tell you the sad
+        truth: it's not here. And I don't even know where it is.
+        You might find it eventually. But I won't do that for you. Sorry,
+        but <b>here is the wrong place.</b>
+    </p>
+    <p>
+        Hint: maybe the navigation up there &uarr; will help you find it.
+    </p>
+{% else %}
+    <h1>Something went horribly wrong: {{ error.code }} - {{ error.name }}</h1>
+    <p>
+        {{ error.description | safe }}
+    </p>
+{% endif %}
+{% endblock %}

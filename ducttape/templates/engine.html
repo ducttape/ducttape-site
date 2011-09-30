@@ -5,8 +5,39 @@
 {% block content %}
     <h1>Engine</h1>
     <p>
-        - write some cool text about what it is and what we want it to
-        be here -
+        The Ducttape Engine is a C++ open-source game engine using
+        <a href="http://www.ogre3d.org/" target="_blank">Ogre3D</a> for graphics,
+        <a href="http://sfml-dev.org/" target="_blank">SFML</a> for network and audio and the
+        <a href="http://bulletphysics.org" target="_blank">Bullet Physics engine</a>.
+    </p>
+    <ul>
+        <li>
+            <a href="https://github.com/ducttape/ducttape-engine" target="_blank">
+                Visit the project on github &raquo;
+            </a>
+        </li>
+        <li>
+            <a href="/docs/" target="_blank">
+                Read the API docs &raquo;
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/ducttape/ducttape-engine/wiki" target="_blank">
+                Read the wiki &raquo;
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/ducttape/ducttape-engine/wiki/Tutorials" target="_blank">
+                View the tutorials &raquo;
+            </a>
+        </li>
+    </ul>
+
+    <h2>License</h2>
+    <p>
+        The Ducttape Engine and its components such as the editor as well
+        as examples and tests are available under the LGPL3 license unless
+        noted otherwise.
     </p>
 
     <h2>Goals</h2>
@@ -22,5 +53,23 @@
             <li>Feature richness</li>
             <li>Extensibility</li>
         </ol>
+    </p>
+
+    <h2>Core development team</h2>
+    <p>
+        <ul>
+            <li>Paul 'opatut' Bienkowski</li>
+            <li>Sven-Hendrik 'Svenstaro' Haase</li>
+            <li>Fabian 'zetaron' Stegemann</li>
+            <li>Matz-Jona 'Timesqueezer' Radloff</li>
+        </ul>
+    </p>
+
+    <h2>Participation</h2>
+    <p>
+        You want to participate? No problem! Just fork the github
+        repository, take an issue from the github issue tracker and
+        join the fun! Just <a href="{{ url_for('contact') }}">let us know</a>
+        about what you're doing.
     </p>
 {% endblock %}

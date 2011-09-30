@@ -1,10 +1,15 @@
 from ducttape import *
 from ducttape.models import *
 
+@app.errorhandler(500)
+@app.errorhandler(404)
+@app.errorhandler(403)
+def error(error):
+    return render_template("error.html", error = error)
+
 @app.route("/")
 def index():
     return render_template("index.html")
-
 
 @app.route("/blog/")
 def blog():
@@ -24,9 +29,9 @@ def engine():
 def editor():
     return render_template("editor.html")
 
-@app.route("/tutorials/")
-def tutorials():
-    return render_template("tutorials.html")
+@app.route("/contribute/")
+def contribute():
+    return render_template("contribute.html")
 
 @app.route("/download/")
 def download():
@@ -40,3 +45,6 @@ def contact():
 def donate():
     return render_template("donate.html")
 
+@app.route("/thanks/", methods=["GET", "POST"])
+def thanks():
+    return render_template("thanks.html")
